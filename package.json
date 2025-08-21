@@ -16,7 +16,7 @@
     "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app dev",
     "web:prod": "yarn workspace next-app build",
     "web:prod:serve": "yarn workspace next-app serve",
-    "postinstall": "yarn check-tamagui && yarn build",
+    "postinstall": "yarn",
     "build": "yarn workspaces foreach --all --exclude next-app run build",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -64,7 +64,7 @@ const Card = ({ title, imageUrl }: CardProps) => {
 const styles = StyleSheet.create((theme, rt) => {
   const isMdUp = rt.breakpoint === 'md' || rt.breakpoint === 'lg' || rt.breakpoint === 'xl'
   const horizontalPadding = isMdUp ? 32 : 16
-  console.log(rt.breakpoint)
+
   return {
     page: {
       paddingHorizontal: horizontalPadding,
@@ -92,7 +92,11 @@ const styles = StyleSheet.create((theme, rt) => {
 
     title: {
       textAlign: 'center',
-      fontSize: isMdUp ? 38 : 28,
+      fontSize: {
+        xs: 28,
+        md: 38,
+        lg: 46,
+      },
       lineHeight: isMdUp ? 46 : 34,
       color: '#1a1a1a',
       fontWeight: '700',

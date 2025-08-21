@@ -5,9 +5,5 @@ import TestComponent from 'app/components/TestComponent'
 import { StylesProvider } from './styles-provider'
 
 export default function Home() {
-  return (
-    <StylesProvider>
-      <TestComponent />
-    </StylesProvider>
-  )
+  return <TestComponent />
 }

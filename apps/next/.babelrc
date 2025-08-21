@@ -11,7 +11,7 @@
         // In this monorepo, styles live in packages/app as well
         // so set the root to the repo root to include shared code
         "root": "app",
-        "autoProcessPaths": ["packages/app"],
+        "autoProcessPaths": ["app/components"],
         // log what you've found
         "debug": true,
       },
