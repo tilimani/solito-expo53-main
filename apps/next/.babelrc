@@ -1,0 +1,20 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "react-native-unistyles/plugin",
+      {
+        // pass root folder of your application
+        // all files under this folder will be processed by the Babel plugin
+        // if you need to include more folders, or customize discovery process
+        // check available babel options
+        // In this monorepo, styles live in packages/app as well
+        // so set the root to the repo root to include shared code
+        "root": "app",
+        "autoProcessPaths": ["packages/app"],
+        // log what you've found
+        "debug": true,
+      },
+    ],
+  ]
+}
